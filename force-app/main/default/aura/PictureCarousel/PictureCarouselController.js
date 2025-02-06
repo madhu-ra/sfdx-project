@@ -4,6 +4,7 @@
     	var slides = component.get("v.slides");
         if (slideIndex + 1 < slides.length) {
             slideIndex = slideIndex + 1;
+		console.log('curr index: ', slideIndex);
 	        component.set("v.slideIndex", slideIndex);
         }
 	},
@@ -14,6 +15,9 @@
             slideIndex = slideIndex - 1;
 	        component.set("v.slideIndex", slideIndex);
         }
-    }
+    },
+
+	last: function(component){
+		// This is to be used in future
 
 })
